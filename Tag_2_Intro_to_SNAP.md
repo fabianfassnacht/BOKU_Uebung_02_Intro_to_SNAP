@@ -45,11 +45,12 @@ Wichtig für alle Sitzungen: Bitte achten Sie auf die korrekte Benennung Ihrer O
 
 Das Hauptfenster des Programms mit den Menüpunkten FILE, EDIT, VIEW, … und HELP öffnet sich.
 
-• Laden Sie den Datensatz subset_0_of_S2A_MSIL1C_20260314T095051_N0512_R079_T33UWP_20260314T132917.dim in den SNAP Viewer via FILE > OPEN PRODUCT.
+• Laden Sie den auf BOKUlearn zur Verfügung gestellten Datensatz **subset_0_of_S2A_MSIL1C_20260314T095051_N0512_R079_T33UWP_20260314T132917.dim** in den SNAP Viewer via **FILE > OPEN PRODUCT**.
 
 HINWEIS: Darauf achten, dass Sie im neuen Fenster unter Files of type > All Files wählen (falls die Datei im Ordner nicht auffindbar sein sollte).
 
-• Öffnen Sie nun den zweiten Spektralkanal (B2), indem Sie mit einem Dop-pelklick auf der linken Seite im Product Explorer > Bands > B2 auswählen.
+• Öffnen Sie nun den zweiten Spektralkanal (B2), indem Sie mit einem Doppelklick auf der linken Seite im Product Explorer > Bands > B2 auswählen.
+
 • Alternativ können Sie einen Rechtsklick auf das B2 machen und "Open Image Window" wählen.
 
 ![Abbildung 2: Laden von Band 2 des Sentinel-2 Satellitenbildes](Fig_02.png)
@@ -86,6 +87,7 @@ Welche Herausforderungen stellen sich dabei allgemein sowie im Unterschied zum S
 ### 2.4 Anzeigen der Pixelwerte
 
 Neben der räumlichen Orientierung ist es natürlich wichtig zu erfahren, welche Werte in jedem Pixel der Satellitenszene enthalten sind.
+
 Tool: Pixel Info (z.B. Suche via Search rechts oben in SNAP)
 
 • Via Selection tool (siehe Toolbar) können einzelne Pixel ausgewählt werden (markiert mit 1 in Abbildung 4). 
