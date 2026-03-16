@@ -92,7 +92,7 @@ Tool: Pixel Info (z.B. Suche via Search rechts oben in SNAP)
 
 • Via Selection tool (siehe Toolbar) können einzelne Pixel ausgewählt werden (markiert mit 1 in Abbildung 4). 
 
-• In der Pixel Info wird unter „Bands“ der im Pixel enthaltene Wert für den geladenen Spektralka-nal (hier: B2) angezeigt (markiert mit 2 in Abbildung 4).
+• In der Pixel Info wird unter „Bands“ der im Pixel enthaltene Wert für den geladenen Spektralkanal (hier: B2) angezeigt (markiert mit 2 in Abbildung 4).
 
 • Die rechte Spalte zeigt die Einheit an, hier: dl = dimensionless.
 
@@ -107,12 +107,12 @@ Aufgabe: Suchen Sie nun beispielhafte Pixelwerte für den Spektralkanal B2 und d
 • **TIPP 1:** Öffnen Sie auch den Spektralkanal B8 im Product Explorer mit einem Doppelklick.
 
 • **TIPP 2**: Sie können sich beide Spektralkanäle auch parallel ansehen:
-- Wählen Sie dafür in der Toolbar Tile Horizontally aus.
-- Die beiden parallelen Views können dann synchronisiert werden via (Menüleiste) VIEW > SYNCHRONIZE IMAGE VIEWS.
+ Wählen Sie dafür in der Toolbar Tile Horizontally aus (markiert mit 5 in Abbildung 4).
+ Die beiden parallelen Views können dann synchronisiert werden via (Menüleiste) VIEW > SYNCHRONIZE IMAGE VIEWS.
 
 ![Abbildung 6: Synchronisation der Visualisierungen einzelner Ansichten](Fig_06.png)
 
-• **TIPP 3**: Sie können dafür das Pin Placing Tool (markiert mit 3 in Abbildung 4)) verwenden und an den gewünschten Stellen einen Pin platzieren. Um die Pixelwerte der einzelnen Pins ablesen zu können, klicken Sie mit dem Selection Tool Ihren Pin an (er ist dann gelb markiert) und setzen Sie im Pixel Info-Fenster das Häkchen für Snap to selected pin (markiert mit 4 in Abbildung 4)). Sie können so für ein und das-selbe Pixel die Werte von mehreren Spektralkanälen ablesen.
+• **TIPP 3**: Sie können dafür das Pin Placing Tool (markiert mit 3 in Abbildung 4)) verwenden und an den gewünschten Stellen einen Pin platzieren. Um die Pixelwerte der einzelnen Pins ablesen zu können, klicken Sie mit dem Selection Tool Ihren Pin an (er ist dann gelb markiert) und setzen Sie im Pixel Info-Fenster das Häkchen für Snap to selected pin (markiert mit 4 in Abbildung 4)). Sie können so für ein und dasselbe Pixel die Werte von mehreren Spektralkanälen ablesen.
 
 
 
