@@ -41,6 +41,8 @@ Wichtig für alle Sitzungen: Bitte achten Sie auf die korrekte Benennung Ihrer O
 
 ![Abbildung 1: Starten von ESA SNAP im Startmenü](Fig_01.png)
 
+**Abbildung 1: Starten von ESA SNAP im Startmenü**
+
 • Starten Sie SNAP unter Start > ESA SNAP > SNAP Desktop. Alternativ doppelklicken sie das Desktop Symbol.
 
 Das Hauptfenster des Programms mit den Menüpunkten FILE, EDIT, VIEW, … und HELP öffnet sich.
@@ -54,6 +56,8 @@ HINWEIS: Darauf achten, dass Sie im neuen Fenster unter Files of type > All File
 • Alternativ können Sie einen Rechtsklick auf das B2 machen und "Open Image Window" wählen.
 
 ![Abbildung 2: Laden von Band 2 des Sentinel-2 Satellitenbildes](Fig_02.png)
+
+**Abbildung 2: Laden von Band 2 des Sentinel-2 Satellitenbildes**
 
 - Welcher Bereich des Lichts wird im Kanal B2 dargestellt? (TIPP: siehe Hausaufgabe 1)
 - Was sehen Sie in diesem Ausschnitt?
@@ -72,6 +76,8 @@ So funktioniert’s:
 - Zooming tool: Zoomen (oder auch das Mausrad dafür verwenden) (markiert mit 1 in Abbildung 3)
 - 
 ![Abbildung 3: Navigation in SNAP ](Fig_03.png)
+
+**Abbildung 3: Navigation in SNAP**
 
 **Aufgabe: Identifizieren Sie folgende Orte/Geoobjekte im Satellitenbild:**
 
@@ -100,9 +106,13 @@ Tool: Pixel Info (z.B. Suche via Search rechts oben in SNAP)
 
 ![Abbildung 4: Anzeigen von Pixelwerten ](Fig_04.png)
 
+**Abbildung 4: Anzeigen von Pixelwerten**
+
 Aufgabe: Suchen Sie nun beispielhafte Pixelwerte für den Spektralkanal B2 und den Spektralkanal B8 für die folgenden Landbedeckungen/ Landnutzungen heraus und notieren Sie sich diese (siehe Tabelle in Abbildung 5).
 
 ![Abbildung 5: Übersicht über die zu extrahierenden Pixelwerte](Fig_05.png)
+
+**Abbildung 5: Übersicht über die zu extrahierenden Pixelwerte**
 
 • **TIPP 1:** Öffnen Sie auch den Spektralkanal B8 im Product Explorer mit einem Doppelklick.
 
@@ -111,6 +121,8 @@ Aufgabe: Suchen Sie nun beispielhafte Pixelwerte für den Spektralkanal B2 und d
  Die beiden parallelen Views können dann synchronisiert werden via (Menüleiste) VIEW > SYNCHRONIZE IMAGE VIEWS.
 
 ![Abbildung 6: Synchronisation der Visualisierungen einzelner Ansichten](Fig_06.png)
+
+**Abbildung 6: Synchronisation der Visualisierungen einzelner Ansichten**
 
 • **TIPP 3**: Sie können dafür das Pin Placing Tool (markiert mit 3 in Abbildung 4)) verwenden und an den gewünschten Stellen einen Pin platzieren. Um die Pixelwerte der einzelnen Pins ablesen zu können, klicken Sie mit dem Selection Tool Ihren Pin an (er ist dann gelb markiert) und setzen Sie im Pixel Info-Fenster das Häkchen für Snap to selected pin (markiert mit 4 in Abbildung 4)). Sie können so für ein und dasselbe Pixel die Werte von mehreren Spektralkanälen ablesen.
 
@@ -132,6 +144,7 @@ So funktioniert’s:
 
 ![Abbildung 7: Aufrufen der Echtfarbendarstellung in SNAP](Fig_07.png)
 
+**Abbildung 7: Aufrufen der Echtfarbendarstellung in SNAP**
 
 • Es öffnet sich folgendes Fenster (Abbildung 8):
 - Sentinel 2 MSI Natural Colors => entspricht der Echtfarbdarstellung
@@ -140,6 +153,8 @@ So funktioniert’s:
 - hier kann die blaue Farbkanone (B) Ihres Bildschirms angesprochen werden
 
 ![Abbildung 8: Echtfarbendarstellung in SNAP](Fig_08.png)
+
+**Abbildung 8: Echtfarbendarstellung in SNAP**
 
 • Überprüfen Sie, ob die ausgewählten Spektralkanäle (hier B4, B3 und B2) den notwendigen Spektralbereichen des Lichts entsprechen (Red = Spektralkanal für Rotes Licht, Green = Spektralkanal für Grünes Licht, Blue = Spektralkanal für Blaues Licht; TIPP: siehe Hausaufgabe 1).
 
@@ -183,6 +198,8 @@ Wenn Sie dieses Handout durchgearbeitet haben, haben Sie
 3) Sie erhalten eine Tabelle mit den folgenden Reflektanzwerten, die aus einem Sentinel-2-Satellitenbild ausgelesen wurden (Abbildung 9).
 
 ![Abbildung 9: Tabelle mit Pixelwerten für RGB-Bänder](Fig_09.png)
+
+**Abbildung 9: Tabelle mit Pixelwerten für RGB-Bänder**
 
 In welcher Farbe werden die Pixel in einer Echtfarbdarstellung erscheinen? In Bereichen mit welcher Landbedeckung könnten die Pixel jeweils liegen?
 	
