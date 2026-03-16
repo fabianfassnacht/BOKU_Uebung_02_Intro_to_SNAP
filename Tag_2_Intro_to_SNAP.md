@@ -237,9 +237,9 @@ Wenn Sie dieses Handout durchgearbeitet haben, haben Sie
 
 3) Sie erhalten eine Tabelle mit den folgenden Reflektanzwerten, die aus einem Sentinel-2-Satellitenbild ausgelesen wurden (Abbildung 9).
 
-![Abbildung 9: Tabelle mit Pixelwerten für RGB-Bänder](Fig_09.png)
+![Abbildung 12: Tabelle mit Pixelwerten für RGB-Bänder](Fig_12.png)
 
-**Abbildung 9: Tabelle mit Pixelwerten für RGB-Bänder**
+**Abbildung 12: Tabelle mit Pixelwerten für RGB-Bänder**
 
 In welcher Farbe werden die Pixel in einer Echtfarbdarstellung erscheinen? In Bereichen mit welcher Landbedeckung könnten die Pixel jeweils liegen?
 	
