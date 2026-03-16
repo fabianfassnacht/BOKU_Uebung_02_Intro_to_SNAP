@@ -201,11 +201,23 @@ Um den Export dennoch zu ermöglichen, werden wir nun zwei weitere Schritte impl
 1. Wir werden nur die Bänder mit 10 m und 20 m Pixelgröße beibehalten
 2. Wir werden alle übriggebliebenen Bänder auf 10 m "resamplen" - d.h., für die Bänder mit 20 m Pixelgröße wird die räumliche Auflösung künstlich erhöht.
 
-Für den ersten Schritt wählen wir im Hauptmenü **"Raster -> Subset"** Im nun erscheinenden Fenster wählen wir zuerst den Reiter (markiert mit 1 in Abbildung 11). Hier selektieren wir zuerst **Select None** (markiert mit 2 in Abbildung 11) und danach wählen wir manuell alle Bänder aus, die entweder 10 m oder 20 m Pixelgröße haben (siehe Abbildung 11)
+Für den ersten Schritt wählen wir im Product Explorer erneut das Satellitenbild an (falls nicht sowieso schon markiert) und wählen dann im Hauptmenü **"Raster -> Subset"**. Im nun erscheinenden Fenster wählen wir zuerst den Reiter **Band Subset** (markiert mit 1 in Abbildung 11). Hier selektieren wir zuerst **Select None** (markiert mit 2 in Abbildung 11) und danach wählen wir manuell alle Bänder aus, die entweder 10 m oder 20 m Pixelgröße haben (siehe Abbildung 11). Wir bestätigen mit **OK**.
+
+![Abbildung 11: Erstellung eines Band-Subsets in SNAP](Fig_11.png)
+
+**Abbildung 11: Erstellung eines Band-Subsets in SNAP**
+
+
+Daraufhin erscheint sofort ein neues Produkt in der **"Product Explorer"** Ansicht. Dies geschieht ohne Zeitverzögerung, da SNAP die eigentliche Erstellung des Subsets noch nicht durchführt sondern nur die "Regel" abspeichert. Erst wenn das Satellitenbild gespeichert oder exportiert wird, wird die eigentliche Prozessierung durchgeführt.
+
+Für den zweiten Schritt wählen wir das soeben erstelle neue Produkt an und wählen dann **Raster -> Geometric -> Resampling**. Im erscheinenden neuen Fenster wählen wir den Reiter **Resampling Parameters** (markiert mit 1 in Abbildung 12). Hier sehen wir verschiedene Auswahlmöglichkeiten wie wir das Resampling durchführen möchten. Für den aktuellen Fall sind die Einstellungen bereits in Ordnung so wie sie sind und wir bestätigen mit **OK**. Daraufhin erscheint wiederum ein neues Produkt im "Product Explorer".
 
 ![Abbildung 11: Erstellen eines Subsets in SNAP](Fig_11.png)
 
 **Abbildung 11: Erstellen eines Subsets in SNAP**
+
+Wenn wir dieses neu erstelle Produkt jetzt anwählen und dann wiederum versuchen das Satellitenbild zu exportieren (siehe oben), sollte es funktionieren. Bitte speichern Sie das Bild mit dem Dateinamen "Sentinel_2_Wien_Maerz_2026.tif" in ihren Ordner. Das Bild werden wir kommende Woche in R weiterverwenden.
+
 
 Das waren die Inhalte der zweiten Sitzung „Einführung in SNAP“.
 Wenn Sie dieses Handout durchgearbeitet haben, haben Sie
