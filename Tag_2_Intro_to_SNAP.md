@@ -180,6 +180,28 @@ So funktioniert’s:
 
 - Welchen Wellenlängenbereichen des Lichts entsprechen diese (siehe Hausaufgabe 1)?
 
+
+### 2.6 Export des Bildes als GeoTIFF
+
+Als letzten Schritt des SNAP-Tutorials werden wir das Satellitenbild nun noch als GeoTiff exportieren. Die Standart-Vorgehensweise für diesen Schritt ist in Abbildung 10 dargestellt. Wir müssen hierfür zuerst das Bild welches wir exportieren wollen im "Product Explorer"-Fenster anwählen und dann **"File -> Export -> GeoTiff / BigTiff"**
+
+
+![Abbildung 9: Export Satellitenbild zu GeoTiff in SNAP](Fig_09.png)
+
+**Abbildung 9: Export Satellitenbild zu GeoTiff in SNAP**
+
+In unserem Fall, führt dies zu einer Fehlermeldung (siehe Abbildung 10). Diese Fehlermeldung erscheint, da unser aktuelles Satellitenbild aus Bändern mit verschiedenen räumlichen Auflösungen besteht. Wir ihr in eurer Hausaufgabe 1 bereits recherchiert hattet, gibt es bei Sentinel-2 bestimmte Bänder mit 10 m Pixelgröße, weitere mit 20 m Pixelgröße, und schließlich welche mit 60 m Pixelgröße. Eine Geotiff-Datei kann hiermir nicht umgehen und erwartet ein Bild in dem alle Bänder dieselbe Pixelgröße haben. Um den Export dennoch zu ermöglichen, werden wir nun zwei weitere Schritte implementieren:
+
+1. Wir werden nur die Bänder mit 10 m und 20 m Pixelgröße beibehalten
+2. Wir werden alle übriggebliebenen Bänder auf 10 m "resamplen" - d.h., für die Bänder mit 20 m Pixelgröße wird die räumliche Auflösung künstlich erhöht.
+
+Für den ersten Schritt wählen wir im Hauptmenü **"Raster -> Subset"**
+
+
+![Abbildung 10: Fehlermeldung - Export nicht möglich](Fig_10.png)
+
+**Abbildung 10: Fehlermeldung - Export nicht möglich**
+
 Das waren die Inhalte der zweiten Sitzung „Einführung in SNAP“.
 Wenn Sie dieses Handout durchgearbeitet haben, haben Sie
 
@@ -188,6 +210,7 @@ Wenn Sie dieses Handout durchgearbeitet haben, haben Sie
 ✓ kennengelernt, wie einzelne Spektralkanäle in Rasterdatensätzen gespeichert sind,
 ✓ für unterschiedliche Wellenlängenbereiche Pixelwerte für verschiedene Landbedeckungen abgerufen und
 ✓ verschiedene Farbkomposite erstellt.
+✓ Das Satellitenbild als Geotiff-Datei exportiert.
 
 ## HAUSAUFGABE
 
