@@ -212,9 +212,9 @@ Daraufhin erscheint sofort ein neues Produkt in der **"Product Explorer"** Ansic
 
 Für den zweiten Schritt wählen wir das soeben erstelle neue Produkt an und wählen dann **Raster -> Geometric -> Resampling**. Im erscheinenden neuen Fenster wählen wir den Reiter **Resampling Parameters** (markiert mit 1 in Abbildung 12). Hier sehen wir verschiedene Auswahlmöglichkeiten wie wir das Resampling durchführen können. Für den aktuellen Fall sind die Einstellungen bereits in Ordnung so wie sie sind und wir bestätigen mit **OK**. Daraufhin erscheint wiederum ein neues Produkt im "Product Explorer".
 
-![Abbildung 11: Erstellen eines Subsets in SNAP](Fig_11.png)
+![Abbildung 12: Resampling von Satellitenbildern in SNAP](Fig_11.png)
 
-**Abbildung 11: Erstellen eines Subsets in SNAP**
+**Abbildung 12: Resampling von Satellitenbildern in SNAP**
 
 Wenn wir dieses neu erstelle Produkt jetzt anwählen und dann wiederum versuchen das Satellitenbild zu exportieren (siehe oben), sollte es funktionieren. Bitte speichern Sie das Bild mit dem Dateinamen "Sentinel_2_Wien_Maerz_2026.tif" in ihren Ordner. Das Bild werden wir kommende Woche in R weiterverwenden.
 
@@ -237,9 +237,9 @@ Wenn Sie dieses Handout durchgearbeitet haben, haben Sie
 
 3) Sie erhalten eine Tabelle mit den folgenden Reflektanzwerten, die aus einem Sentinel-2-Satellitenbild ausgelesen wurden (Abbildung 9).
 
-![Abbildung 12: Tabelle mit Pixelwerten für RGB-Bänder](Fig_12.png)
+![Abbildung 13: Tabelle mit Pixelwerten für RGB-Bänder](Fig_13.png)
 
-**Abbildung 12: Tabelle mit Pixelwerten für RGB-Bänder**
+**Abbildung 13: Tabelle mit Pixelwerten für RGB-Bänder**
 
 In welcher Farbe werden die Pixel in einer Echtfarbdarstellung erscheinen? In Bereichen mit welcher Landbedeckung könnten die Pixel jeweils liegen?
 	
