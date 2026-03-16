@@ -190,17 +190,22 @@ Als letzten Schritt des SNAP-Tutorials werden wir das Satellitenbild nun noch al
 
 **Abbildung 9: Export Satellitenbild zu GeoTiff in SNAP**
 
-In unserem Fall, führt dies zu einer Fehlermeldung (siehe Abbildung 10). Diese Fehlermeldung erscheint, da unser aktuelles Satellitenbild aus Bändern mit verschiedenen räumlichen Auflösungen besteht. Wir ihr in eurer Hausaufgabe 1 bereits recherchiert hattet, gibt es bei Sentinel-2 bestimmte Bänder mit 10 m Pixelgröße, weitere mit 20 m Pixelgröße, und schließlich welche mit 60 m Pixelgröße. Eine Geotiff-Datei kann hiermir nicht umgehen und erwartet ein Bild in dem alle Bänder dieselbe Pixelgröße haben. Um den Export dennoch zu ermöglichen, werden wir nun zwei weitere Schritte implementieren:
-
-1. Wir werden nur die Bänder mit 10 m und 20 m Pixelgröße beibehalten
-2. Wir werden alle übriggebliebenen Bänder auf 10 m "resamplen" - d.h., für die Bänder mit 20 m Pixelgröße wird die räumliche Auflösung künstlich erhöht.
-
-Für den ersten Schritt wählen wir im Hauptmenü **"Raster -> Subset"**
-
+In unserem Fall, führt dies zu einer Fehlermeldung (siehe Abbildung 10). Diese Fehlermeldung erscheint, da unser aktuelles Satellitenbild aus Bändern mit verschiedenen räumlichen Auflösungen besteht. Wir ihr in eurer Hausaufgabe 1 bereits recherchiert hattet, gibt es bei Sentinel-2 bestimmte Bänder mit 10 m Pixelgröße, weitere mit 20 m Pixelgröße, und schließlich welche mit 60 m Pixelgröße. Eine Geotiff-Datei kann hiermir nicht umgehen und erwartet ein Bild in dem alle Bänder dieselbe Pixelgröße haben. 
 
 ![Abbildung 10: Fehlermeldung - Export nicht möglich](Fig_10.png)
 
 **Abbildung 10: Fehlermeldung - Export nicht möglich**
+
+Um den Export dennoch zu ermöglichen, werden wir nun zwei weitere Schritte implementieren:
+
+1. Wir werden nur die Bänder mit 10 m und 20 m Pixelgröße beibehalten
+2. Wir werden alle übriggebliebenen Bänder auf 10 m "resamplen" - d.h., für die Bänder mit 20 m Pixelgröße wird die räumliche Auflösung künstlich erhöht.
+
+Für den ersten Schritt wählen wir im Hauptmenü **"Raster -> Subset"** Im nun erscheinenden Fenster wählen wir zuerst den Reiter (markiert mit 1 in Abbildung 11). Hier selektieren wir zuerst **Select None** (markiert mit 2 in Abbildung 11) und danach wählen wir manuell alle Bänder aus, die entweder 10 m oder 20 m Pixelgröße haben (siehe Abbildung 11)
+
+![Abbildung 11: Erstellen eines Subsets in SNAP](Fig_11.png)
+
+**Abbildung 11: Erstellen eines Subsets in SNAP**
 
 Das waren die Inhalte der zweiten Sitzung „Einführung in SNAP“.
 Wenn Sie dieses Handout durchgearbeitet haben, haben Sie
