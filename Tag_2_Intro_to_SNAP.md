@@ -247,3 +247,8 @@ Hinweis: Recherchieren Sie auf den Seminarfolien, welche Farbanteile des sichtba
 Übertragen Sie die ausgefüllte Tabelle in Ihre Hausaufgabenpräsentation.
 
 Speichern Sie Ihre kurze(!) Präsentation als PDF-Datei und benennen Sie diese folgendermaßen: Nachname_Vorname_HA2.pdf (z.B. für Max Mustermann - Mustermann_Max_HA2.pdf)
+
+4) Zur Vorbereitung der Übungen für kommende Woche, gehen Sie bitte auf diese Webseite: https://rspatial.org/intr/1-introduction.html und arbeiten Sie die Kapitel "Introduction", "Basic Data Types", "Basic data structures", "Indexing", "Algebra" und "Read and Write Files" durch.
+   
+
+
