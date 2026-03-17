@@ -235,7 +235,7 @@ Wenn Sie dieses Handout durchgearbeitet haben, haben Sie
 
 2) Zeigen Sie zwei vergleichende Screenshots auf einer Folie (A: Echtfarbkomposit, siehe 2.5.1, sowie B: Falschfarbkomposit, siehe 2.5.2) und geben Sie die jeweils dargestellte Kanalkombination an. Geben Sie bitte stichpunktartig an, welche Landnutzung, Landbedeckung oder Eigenschaft in der Falschfarbdarstellung im Vergleich zum Echtfarbkomposit besonders gut identifiziert werden kann.
 
-3) Sie erhalten eine Tabelle mit den folgenden Reflektanzwerten, die aus einem Sentinel-2-Satellitenbild ausgelesen wurden (Abbildung 9).
+3) Sie erhalten eine Tabelle mit den folgenden Reflektanzwerten, die aus einem Sentinel-2-Satellitenbild ausgelesen wurden (Abbildung 13).
 
 ![Abbildung 13: Tabelle mit Pixelwerten für RGB-Bänder](Fig_13.png)
 
