@@ -66,46 +66,30 @@ Für die Navigation innerhalb des visualisierten Satellitenbildes gibt es im Rei
 - Zoom-Buttons: Durch (mehrfaches) klicken des plus oder minus buttons (markiert mit 2 in Abbildung 3a) kann man in das Satellitenbild hinein- oder herauszoomen. Alternativ kann man auch mit dem Mausrad zoomen.
  
 
-![Abbildung 3: Navigation in SNAP ](Fig_03.png)
+![Abbildung 3: Navigation in SNAP 1](Fig_03.png)
 
-**Abbildung 3: Navigation in SNAP**
+**Abbildung 3: Navigation in SNAP - Teil 1**
+
+![Abbildung 3: Navigation in SNAP ]2(Fig_03a.png)
+
+**Abbildung 3a: Navigation in SNAP - Teil 2**
 
 
-### 2.4 Anzeigen der Spektralsignaturen
 
-Neben der räumlichen Orientierung ist es natürlich wichtig zu erfahren, welche Werte in jedem Pixel der Satellitenszene enthalten sind.
+### 2.4 Anzeigen von Pixelwerten
 
-Tool: Pixel Info (z.B. Suche via Search rechts oben in SNAP)
+Die Visualisierung eines einzelnen Spektralkanals ermöglicht uns wertvolle räumliche und Textur-Information im Bild zu erfassen, gleichzeitig ist die Darstellung der im Satellitenbild vorhandenen Spektralinformation momentan auf einen einzelnen Kanal beschränkt und wir können die genauen Pixelwerte nicht sehen. Im Folgenden werden wir lernen, wie wir uns die jeweiligen SPektralwerte von einzelnen Pixeln anzeigen lassen können.
 
-• Via Selection tool (siehe Toolbar) können einzelne Pixel ausgewählt werden (markiert mit 1 in Abbildung 4). 
+Hierfür werden wir zuerst das "Pixel Info" Fenster öffnen (falls dieses nicht bereits geöffnet ist). Die können wir erreichen in dem wir rechts oben in der "Search" Leiste (markiert mit 0 in Abbildung 4) "pixel info" eingeben und klicken. Dann sollte ein zusätzlicher Reiter im "Product Explorer" Fenster erscheinen (markiert mit 2 in Abbildung 4). 
 
-• In der Pixel Info wird unter „Bands“ der im Pixel enthaltene Wert für den geladenen Spektralkanal (hier: B2) angezeigt (markiert mit 2 in Abbildung 4).
+Mit dem "Selection tool" (markiert mit 1 in Abbildung 4) können wir mit dem Mauszeiger über einen bestimmten Teil des Bildes fahren und in der Pixel Info wird unter „Bands“ der im Pixel enthaltene Wert für den aktuell geladenen Spektralkanal (hier: B2) angezeigt (markiert mit 2 in Abbildung 4).
 
-• Die rechte Spalte zeigt die Einheit an, hier: dl = dimensionless.
-
-⇒  Der angegebene Pixelwert stellt den Reflexionsgrad (auch Reflektanz, engl. reflectance) dar.
+Die rechte Spalte zeigt die Einheit an. Im gegebenen Fall handelt es sich um eine atmosphärische korrigierte Satellitenbildszene, und die Einheit "dl" steht für "dimensionless". Tatsächlich stellt der angegebene Pixelwert  den Reflexionsgrad (auch Reflektanz, engl. reflectance) dar, d.h., der prozentuale Anteil der einfallenden elektromagnetischen Strahlung der von der räumlichen Bezugsfläche auf der Erdoberfläche (dem Pixel) in Richtung des Sensors zurückgestrahlt wurde.
 
 ![Abbildung 4: Anzeigen von Pixelwerten ](Fig_04.png)
 
 **Abbildung 4: Anzeigen von Pixelwerten**
 
-Aufgabe: Suchen Sie nun beispielhafte Pixelwerte für den Spektralkanal B2 und den Spektralkanal B8 für die folgenden Landbedeckungen/ Landnutzungen heraus und notieren Sie sich diese (siehe Tabelle in Abbildung 5).
-
-![Abbildung 5: Übersicht über die zu extrahierenden Pixelwerte](Fig_05.png)
-
-**Abbildung 5: Übersicht über die zu extrahierenden Pixelwerte**
-
-• **TIPP 1:** Öffnen Sie auch den Spektralkanal B8 im Product Explorer mit einem Doppelklick.
-
-• **TIPP 2**: Sie können sich beide Spektralkanäle auch parallel ansehen:
- Wählen Sie dafür in der Toolbar Tile Horizontally aus (markiert mit 5 in Abbildung 4).
- Die beiden parallelen Views können dann synchronisiert werden via (Menüleiste) VIEW > SYNCHRONIZE IMAGE VIEWS.
-
-![Abbildung 6: Synchronisation der Visualisierungen einzelner Ansichten](Fig_06.png)
-
-**Abbildung 6: Synchronisation der Visualisierungen einzelner Ansichten**
-
-• **TIPP 3**: Sie können dafür das Pin Placing Tool (markiert mit 3 in Abbildung 4)) verwenden und an den gewünschten Stellen einen Pin platzieren. Um die Pixelwerte der einzelnen Pins ablesen zu können, klicken Sie mit dem Selection Tool Ihren Pin an (er ist dann gelb markiert) und setzen Sie im Pixel Info-Fenster das Häkchen für Snap to selected pin (markiert mit 4 in Abbildung 4)). Sie können so für ein und dasselbe Pixel die Werte von mehreren Spektralkanälen ablesen.
 
 
 
