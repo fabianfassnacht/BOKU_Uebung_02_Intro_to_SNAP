@@ -65,7 +65,7 @@ Für die Navigation innerhalb des visualisierten Satellitenbildes gibt es im Rei
 
 **Abbildung 3: Navigation in SNAP - Teil 1**
 
-![Abbildung 3: Navigation in SNAP ]2(Fig_03a.png)
+![Abbildung 3: Navigation in SNAP ](Fig_03a.png)
 
 **Abbildung 3a: Navigation in SNAP - Teil 2**
 
