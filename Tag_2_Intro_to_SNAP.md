@@ -1,39 +1,32 @@
 ﻿
-Fernerkundung in der Landschaftsplanung - Tag 2 - SNAP
+Einführung in die Fernerkundung - Tag 2 - SNAP
 
-**Autoren:** Diese Übung wurde von **Dr. Anika Sieber**, FU Berlin entwickelt. Für die Verwendung an der BOKU wurden von Fabian Fassnacht kleinere Anpassungen durchgeführt. 
 
 ## 2 Einstieg in SNAP
 
 ### Allgemeine Hinweise
 
-• Lesen Sie sich dieses Handout ausführlich bis zum Ende durch, **bevor Sie mit der Übung beginnen**! Sehr häufig klären sich Ihre aufkommenden Fragen in den nächsten Arbeitsschritten!
+•Es empfiehlt sich für die Übungen immer einen eigenen lokalen Ordner anzulegen und zu verwenden (z.B. **…\FE_Kurs\02_SNAP**). Ich rate ausdrücklich von der Verwendung des Desktops und der "Dokumente" oder ähnlicher Ordner ab, die insbesondere bei späteren Aufgaben mit R zu Problemen führen können. 
 
-•Legen Sie sich einen Arbeitsordner an, in dem Sie alle zukünftigen Daten für unseren Fernerkundungskurs speichern. Wir empfehlen, diesen Ordner z.B.  **FE_Kurs** zu nennen und in diesem weitere Unterordner für jede einzelne Sitzung anzulegen (z.B. **…\FE_Kurs\02_SNAP** für die heutige Sitzung).
-
-Wichtig für alle Sitzungen: Bitte achten Sie auf die korrekte Benennung Ihrer Ordnernamen:
-
- - Erlaubt sind: Zahlen, gängige Buchstaben sowie Unterstriche.
- - Verzichten Sie unbedingt auf: Umlaute, Leerzeichen und Sonderzeichen!
+Im Idealfall sollte man bei der Ordnererstellung darauf achten keine Sonderzeichen (wie z.B. "ä", "ü", "ö", "ß", "%" usw.) zu verwenden
 
 **Daten:**
 
 • Komprimierter Datensatz Sentinel_2_Wien.zip (mit 2 Dateien, die die 12 einzelnen Sentinel-2-Spektralkanäle einer Sentinel-2-Szene aus dem März 2026 enthalten)
 
-• Wir stellen Ihnen diese Daten in einem komprimierten Datenformat  auf BOKUlearn zur Verfügung.
+• Die Daten finden sich auf BOKUlearn.
 
-▪ Bitte kopieren und speichern Sie die Daten in Ihrem eigenen Ordner 
+▪ Bitte die Daten herunterladen und im eigenen Ordner abspeichern - achtet darauf, dass ihr den Ordner wiederfinden könnt.
 
-▪ Anschließend können Sie die Daten entpacken. 
+▪ Anschließend können die Daten entpackt werden
 
 
 ### 2.1 Lernziele
 
-• Kennenlernen der SNAP-Benutzeroberfläche
-• Laden von Rasterdaten
-• Räumliche Orientierung im Sentinel-2-Satellitenbild
-• Kennenlernen verschiedener Spektralkanäle/Bänder und Abrufen von Pixelwerten für verschiedene Landbedeckungen
-• Vergleichende Darstellung
+• Erstes Kennenlernen von SNAP
+• Laden von Satellitenbildern in SNAP
+• Navigation innerhalb des Satellitenbildes
+• Erste Visualisierung von Satellitenbildern sowie Anzeigen von Spektralinformationen
 
 
 
@@ -43,27 +36,23 @@ Wichtig für alle Sitzungen: Bitte achten Sie auf die korrekte Benennung Ihrer O
 
 **Abbildung 1: Starten von ESA SNAP im Startmenü**
 
-• Starten Sie SNAP unter Start > ESA SNAP > SNAP Desktop. Alternativ doppelklicken sie das Desktop Symbol.
+• Wir starten in dem wir SNAP starten. Dafür wählen wir: Start > ESA SNAP > SNAP Desktop. Falls eine Desktopverknüpfung auf Ihrem Rechner vorhanden ist, können Sie auch diese doppelklicken.
 
-Das Hauptfenster des Programms mit den Menüpunkten FILE, EDIT, VIEW, … und HELP öffnet sich.
+Nachdem sich SNAP geöffnet hat, können wir nun das zur Verfügung gestellte Satellitenbild öffnen.
 
-• Laden Sie den auf BOKUlearn zur Verfügung gestellten Datensatz **subset_0_of_S2A_MSIL1C_20260314T095051_N0512_R079_T33UWP_20260314T132917.dim** in den SNAP Viewer via **FILE > OPEN PRODUCT**.
+• Hierfür gibt es zwei Optionen, zum einen kann das Bild über **FILE > OPEN PRODUCT** geöffnet werden oder alternativ über: **FILE > IMPORT > OPTICAL SENSORS > Sentinel-2 > S2-MSI L2A**
 
-HINWEIS: Darauf achten, dass Sie im neuen Fenster unter Files of type > All Files wählen (falls die Datei im Ordner nicht auffindbar sein sollte).
+Falls  mit der ersten Option das Bild im richtigen Ordner nicht angezeigt wird, kann man unter Files of type > All Files wählen und dann sollte das Bild zu sehen sein. Eine weitere Option ist es die gezippte Datei direkt via "drag & drop" in den Product Explorer von SNAP zu ziehen.
 
-• Öffnen Sie nun den zweiten Spektralkanal (B2), indem Sie mit einem Doppelklick auf der linken Seite im Product Explorer > Bands > B2 auswählen.
-
-• Alternativ können Sie einen Rechtsklick auf das B2 machen und "Open Image Window" wählen.
+• Als nächsten Schritt öffnen wir einen einzelnen Spektralkanal des Satellitenbildes. Dafür öffnen wir zuerst im Product Explorer den Reiter Bands und machen dann entweder einen Rechtsklick auf das Band 3 und wählen "" oder alternativ führen wir einen Doppelklick auf das Band 3 aus.
 
 ![Abbildung 2: Laden von Band 2 des Sentinel-2 Satellitenbildes](Fig_02.png)
 
 **Abbildung 2: Laden von Band 2 des Sentinel-2 Satellitenbildes**
 
-- Welcher Bereich des Lichts wird im Kanal B2 dargestellt? (TIPP: siehe Hausaufgabe 1)
-- Was sehen Sie in diesem Ausschnitt?
+Sie sollten nun rechts im Bereich "" eine Visualisierung des Spektralkanals sehen. Im nächsten Schritt lernen wir, wie wir innerhalb des Satellitenbildes navigieren können.
 
-
-### 2.3 Räumliches Orientieren und Navigieren im Satellitenbild
+### 2.3 Navigieren und zoomen im Satellitenbild
 
 So funktioniert’s:
 
@@ -231,24 +220,6 @@ Wenn Sie dieses Handout durchgearbeitet haben, haben Sie
 
 ## HAUSAUFGABE
 
-1) Zeigen Sie Ihre vollständig ausgefüllte Tabelle aus 2.4 mit den Sentinel-2 Pixelwerten der fünf Landbedeckungs- und Landnutzungstypen für die Spektralkanäle B2 und B8.
 
-2) Zeigen Sie zwei vergleichende Screenshots auf einer Folie (A: Echtfarbkomposit, siehe 2.5.1, sowie B: Falschfarbkomposit, siehe 2.5.2) und geben Sie die jeweils dargestellte Kanalkombination an. Geben Sie bitte stichpunktartig an, welche Landnutzung, Landbedeckung oder Eigenschaft in der Falschfarbdarstellung im Vergleich zum Echtfarbkomposit besonders gut identifiziert werden kann.
-
-3) Sie erhalten eine Tabelle mit den folgenden Reflektanzwerten, die aus einem Sentinel-2-Satellitenbild ausgelesen wurden (Abbildung 13).
-
-![Abbildung 13: Tabelle mit Pixelwerten für RGB-Bänder](Fig_13.png)
-
-**Abbildung 13: Tabelle mit Pixelwerten für RGB-Bänder**
-
-In welcher Farbe werden die Pixel in einer Echtfarbdarstellung erscheinen? In Bereichen mit welcher Landbedeckung könnten die Pixel jeweils liegen?
-	
-Hinweis: Recherchieren Sie auf den Seminarfolien, welche Farbanteile des sichtbaren Lichts die Spektralkanäle jeweils abbilden.
-Übertragen Sie die ausgefüllte Tabelle in Ihre Hausaufgabenpräsentation.
-
-Speichern Sie Ihre kurze(!) Präsentation als PDF-Datei und benennen Sie diese folgendermaßen: Nachname_Vorname_HA2.pdf (z.B. für Max Mustermann - Mustermann_Max_HA2.pdf)
-
-4) Zur Vorbereitung der Übungen für kommende Woche, gehen Sie bitte auf diese Webseite: https://rspatial.org/intr/1-introduction.html und arbeiten Sie die Kapitel "Introduction", "Basic Data Types", "Basic data structures", "Indexing", "Algebra" und "Read and Write Files" durch.
-   
 
 
