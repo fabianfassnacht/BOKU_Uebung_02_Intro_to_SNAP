@@ -181,7 +181,7 @@ Wenn wir dieses neu erstelle Produkt jetzt anwählen und dann wiederum versuchen
 
 ## HAUSAUFGABE
 
-1. Notieren Sie sich die Spektralwerte der unten genannten Sentinel-2 Bänder für jeweils 3 Pixel die, die Landbedeckungsklassen **"Wasser"**, **"Wald"** und **"Versiegelte Fläche"** repräsentieren.
+1. Notieren Sie sich die Spektralwerte der unten genannten Sentinel-2 Bänder für jeweils 3 Pixel die, die Landbedeckungsklassen **"Wasser"**, **"Wald"** und **"Versiegelte Fläche"** repräsentieren (insgesamt Werte für 9 Pixel).
 
 Band 2 (blue)
 Band 3 (green)
