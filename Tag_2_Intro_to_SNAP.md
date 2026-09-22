@@ -172,7 +172,7 @@ Daraufhin erscheint sofort ein neues Produkt in der **"Product Explorer"** Ansic
 
 Für den zweiten Schritt wählen wir das soeben erstelle neue Produkt an und wählen dann **Raster -> Geometric -> Resampling**. Im erscheinenden neuen Fenster wählen wir den Reiter **Resampling Parameters** (markiert mit 1 in Abbildung 12). Hier sehen wir verschiedene Auswahlmöglichkeiten wie wir das Resampling durchführen können. Für den aktuellen Fall sind die Einstellungen bereits in Ordnung so wie sie sind und wir bestätigen mit **OK**. Daraufhin erscheint wiederum ein neues Produkt im "Product Explorer".
 
-![Abbildung 12: Resampling von Satellitenbildern in SNAP](Fig_11.png)
+![Abbildung 12: Resampling von Satellitenbildern in SNAP](Fig_12.png)
 
 **Abbildung 12: Resampling von Satellitenbildern in SNAP**
 
@@ -181,6 +181,18 @@ Wenn wir dieses neu erstelle Produkt jetzt anwählen und dann wiederum versuchen
 
 ## HAUSAUFGABE
 
+1. Notieren Sie sich die Spektralwerte der unten genannten Sentinel-2 Bänder für jeweils 3 Pixel die, die Landbedeckungsklassen **"Wasser"**, **"Wald"** und **"Versiegelte Fläche"** repräsentieren.
 
+Band 2 (blue)
+Band 3 (green)
+Band 4 (red)
+Band 5 (red edge)
+Band 8 (NIR)
+Band 11 (SWIR)
 
+2. Stellen Sie die Werte als ein Spektrum dar (ein Plot der auf der X-Achse entweder die Wellenlänge oder die Bandnummer und auf der Y-Achse die Spektralwerte zeigt - im Idealfall sind die punktuellen Messungen mit einer Linie verbunden - siehe Abbildung 13 für ein Beispiel). Nutzen Sie z.B. Excel oder R um die Grafik zu erstellen (sie können alternativ auch ChatGPT bitten basierend auf ihren Daten eine solche Grafik anzufertigen oder die Grafik von Hand zeichnen). 
+
+![Abbildung 13: Beispiel für ein Spektrum](Fig_13.png)
+
+**Abbildung 13: Beispiel für ein Spektrum**
 
