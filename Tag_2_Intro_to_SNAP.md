@@ -82,7 +82,7 @@ Die Visualisierung eines einzelnen Spektralkanals ermöglicht uns wertvolle räu
 
 Hierfür werden wir zuerst das "Pixel Info" Fenster öffnen (falls dieses nicht bereits geöffnet ist). Die können wir erreichen in dem wir rechts oben in der "Search" Leiste (markiert mit 0 in Abbildung 4) "pixel info" eingeben und klicken. Dann sollte ein zusätzlicher Reiter im "Product Explorer" Fenster erscheinen (markiert mit 2 in Abbildung 4). 
 
-Mit dem "Selection tool" (markiert mit 1 in Abbildung 4) können wir mit dem Mauszeiger über einen bestimmten Teil des Bildes fahren und in der Pixel Info wird unter „Bands“ der im Pixel enthaltene Wert für den aktuell geladenen Spektralkanal (hier: B2) angezeigt (markiert mit 2 in Abbildung 4).
+Mit dem "Selection tool" (markiert mit 1 in Abbildung 4) können wir mit dem Mauszeiger über einen bestimmten Teil des Bildes fahren und in der Pixel Info wird unter „Bands“ der im Pixel enthaltene Wert für den aktuell geladenen Spektralkanal (hier: B2) angezeigt (markiert mit 5 in Abbildung 4).
 
 Die rechte Spalte zeigt die Einheit an. Im gegebenen Fall handelt es sich um eine atmosphärische korrigierte Satellitenbildszene, und die Einheit "dl" steht für "dimensionless". Tatsächlich stellt der angegebene Pixelwert  den Reflexionsgrad (auch Reflektanz, engl. reflectance) dar, d.h., der prozentuale Anteil der einfallenden elektromagnetischen Strahlung der von der räumlichen Bezugsfläche auf der Erdoberfläche (dem Pixel) in Richtung des Sensors zurückgestrahlt wurde.
 
@@ -90,78 +90,78 @@ Die rechte Spalte zeigt die Einheit an. Im gegebenen Fall handelt es sich um ein
 
 **Abbildung 4: Anzeigen von Pixelwerten**
 
-
+Um etwas systematischer die Reflektanzen bestimmter Pixel im Bild untersuchen zu können, ist es auch möglich mit dem Pin-placing tool (markiert mit 3 in Abbildung 4) bestimmte Pixel zuerst zu markieren, diese dann mit dem Auswahlwerkzeug (markiert mit 1 in Abbildung 4) zu selektieren und sich dann den Pixelwert des aktuell ausgewählten Pixels über die Option "Snap to selected pin" (markiert mit 4 in Abbildung 4) anzeigen zu lassen.
 
 
 ### 2.5 Farbdarstellung
-Bisher haben Sie sich die Spektralkanäle einzeln und in Graustufen ansehen können. Um Ihr Satellitenbild auch in Farbe sehen zu können, müssen mehrere Spektralkanäle miteinander kombiniert werden. Das ist in SNAP über ein Tool möglich, das für die 3 verschiedenen „Farbkanonen“ (Rot, Grün, Blau) am Bildschirm die jeweiligen Spektralkanäle der Sentinal-2-Szene auswählt.
 
-Wichtig: Ihr Bildschirm kann nur die Farben Rot, Grün und Blau über die sogenannten „Farbkanonen“ mischen. Deshalb können auch nur maximal drei Spektralkanäle Ihres mehrkanaligen Datensatzes gleichzeitig dargestellt werden. Additive Farbmischung! Für die Farbdarstellung am Monitor können Sie die Spektralkanäle Ihres mehrkanaligen Datensatzes frei kombinieren – Sie müssen nur jeweils einen Spektralkanal auf eine Monitor-Farbkanone „legen“.
+Bisher haben wir nur einen einzelnen Spektralkanal visualisiert, der dann notwendigerweise als Graustufenbild dargestellt wird. Um ein Farbbild zu erhalten, müssen mindestens 2 (in der Regel aber 3) Spektralkanäle verwendet werden. Für die Visualisierung eines Farbbildes verwendet ein Computer-Monitor drei Farbkanäle. Dies entspricht 3 LED-Einheiten im monitor, die in der Lage sind blaues (B), grünes (G) und rotes (R) Licht auszugeben. Alle anderen Farben werden aus der Kombination und Gewichtung der drei Farben erzeugt. 
 
-Wir wollen uns die Sentinel-2-Szene zuerst in einer Echtfarbdarstellung ansehen, danach in einer Falschfarbdarstellung.
+D.h., für die Visualisierung muss ich dem Computer mitteilen welche Spektralkanäle des Satellitenbildes ich welchem Farbkanal des Monitors zuordnen möchte. In SNAP gibt es hier einige Standardeinstellungen, die es ermöglichen die gängigsten Visualisierungen eines Sentinel-2 Bildes schnell umsetzen. Eine benutzerdefinierte Definition welche Spektralkanäle welchen Farnkanälen zugeordnet werden ist allerdings auch problemlos und einfach möglich.
 
-#### 2.5.1 Echtfarbdarstellung
-Aufgabe: Öffnen Sie ein sogenanntes Echtfarbkomposit in SNAP.
+Die zwei typischsten Visualisierungen sind das RGB-Echtfarbenkomposit und das CIR-Falschfarbenkomposit.
 
-So funktioniert’s:
+#### 2.5.1 RGB-Echtfarbenkomposit
 
-• Rechtsklick auf den Datensatz im Product Explorer > Open RGB Image Window (Abbildung 7)
+Ein RGB-Echtfarbenkomposit hat es zum Ziel die Spektralkanäle des Satellitenbildes so den Farbkanälen zuzuordnen, damit das Satellitenbild in einer Form visualisiert wird, wie ein menschliches Auge es wahrnehmen würde, wenn es die Erdoberfläche an Bord des Satelliten beobachten würde.
+
+Ein Echtfarbenkomposit kann in SNAP wie folgt geöffnet werden:
+
+Rechtsklick auf das Satellitenbild im Product Explorer und Auswahl der Option: **Open RGB Image Window** (Abbildung 7)
 
 ![Abbildung 7: Aufrufen der Echtfarbendarstellung in SNAP](Fig_07.png)
 
 **Abbildung 7: Aufrufen der Echtfarbendarstellung in SNAP**
 
-• Es öffnet sich folgendes Fenster (Abbildung 8):
-- Sentinel 2 MSI Natural Colors => entspricht der Echtfarbdarstellung
-- hier kann die rote Farbkanone (R) Ihres Bildschirms angesprochen werden
-- hier kann die grüne Farbkanone (G) Ihres Bildschirms angesprochen werden
-- hier kann die blaue Farbkanone (B) Ihres Bildschirms angesprochen werden
+Es öffnet sich ein neues Fenster (siehe Abbildung 8) in dem wir die Option **Sentinel 2 MSI Natural Colors** wählen. 
+
+Die automatische Zuordnung bei dieser Option ist wie folgt:
+
+Blauer Farbkanal ==> Sentinel-2 Band 2 (blauer Wellenlängenbereich)
+Grüner Farbkanal ==> Sentinel-2 Band 3 (grüner Wellenlängenbereich)
+Roter Farbkanal ==> Sentinel-2 Band 4 (roter Wellenlängenbereich)
+
 
 ![Abbildung 8: Echtfarbendarstellung in SNAP](Fig_08.png)
 
 **Abbildung 8: Echtfarbendarstellung in SNAP**
 
-• Überprüfen Sie, ob die ausgewählten Spektralkanäle (hier B4, B3 und B2) den notwendigen Spektralbereichen des Lichts entsprechen (Red = Spektralkanal für Rotes Licht, Green = Spektralkanal für Grünes Licht, Blue = Spektralkanal für Blaues Licht; TIPP: siehe Hausaufgabe 1).
-
-• Passen Sie die ausgewählten Spektralkanäle ggf. an und klicken Sie auf „OK“.
-
-• Es öffnet sich ein neuer Viewer mit dem Namen „Sentinel 2 MSI Natural Colors RGB“.
+Es ist wichtig darauf zu achten, dass diese Zuordnung nur automatisiert richtig erfolgt, wenn die Wellenlängenbereiche im Satellitenbild richtig definiert sind. Ist dies nicht der Fall, kann es hier zu Problemen kommen. In unserem Fall, sollte nach Bestätigen der Option das Satellitenbild als Farbbild visualisiert werden (vergleich Abbildung 8).
 
 
 #### 2.5.2 Falschfarbdarstellung
-Neben den Echtfarbkompositen werden in der Fernerkundung und allgemein bei der Arbeit mit Satellitendaten gern Falschfarbkomposite verwendet. Hier werden Kanalkombinationen gewählt, die nicht unserem gewohnten Sehen in Rot-Grün-Blau entsprechen.
 
-Falschfarbkomposite haben den Vorteil, dass wir auch die Spektralkanäle visualisieren können, deren Spektralbereiche wir Menschen natürlicherweise nicht sehen können. Diese für uns nicht sichtbaren Spektralbereiche, z.B. das Nahe Infrarot, haben aber eine herausragende Bedeutung in vielen Anwendungsbereichen, z.B. bei Arbeiten zur Vegetationsvitalität.
 
-Aufgabe: Stellen Sie ein Falschfarbkomposit dar.
+Neben den RGB-Echtfarbendarstellung ist die zweihäufigste verwendete Visualisierung das CIR-Falschfarbenkomposit. Dabei steht CIR für "Color Infrared". Die CIR-Falschfarbendarstellung ist insbesondere für die Analyse und Interpretation von Vegetation interessant, da in dieser Visualisierungsvariante der Spektralkanal, welcher Informationen im Nahen Infrarot enthält sichtbar gemacht wird. 
 
-So funktioniert’s:
+Um eine CIR-Visualisierung zu erstellen führen wir wiederum einen Rechtsklick auf das Satellitenbild aus und wählen **Open RGB Image Window** (Abbildung 7).
 
-• Rechtsklick auf den Datensatz im Product Explorer > Open RGB Image Window
+Es öffnet sich ein neues Fenster (siehe Abbildung 8) in dem wir die Option **Sentinel 2 MSI False Color Infrared** wählen. 
 
-• Unter Profile > False-color Infrared RGB auswählen.
+Die automatische Zuordnung bei dieser Option ist wie folgt:
 
-- Welche Spektralkanäle werden ausgewählt?
+Blauer Farbkanal ==> Sentinel-2 Band 3 (grüner Wellenlängenbereich)
+Grüner Farbkanal ==> Sentinel-2 Band 4 (roter Wellenlängenbereich)
+Roter Farbkanal ==> Sentinel-2 Band 8 (naher Infrarot Wellenlängenbereich)
 
-- Welchen Wellenlängenbereichen des Lichts entsprechen diese (siehe Hausaufgabe 1)?
-
+Bemerkenswert ist hierbei, dass das Band 8 gewählt wird und nicht das Band 5, 6 oder 7. Die Bänder 5, 6 und 7 liegen ebenfalls alle im nahen Infrarotbereich (und könnten dementsprechend gewählt werden und würden farblich einen ähnlichen visuellen Eindruck erzielen), sie haben allerdings eine räumliche AUflösung (Pixelgröße) von 20 m, wohingegen das Band 8 eine höhere räumliche Auflösung von 10 m besitzt. Da das grüne und das rote Band bei Sentinel-2 ebenfalls 10 m Auflösung besitzen, ist es sinnvoll das Band 8 zu wählen, um von der deutlich erhöhten Bildschärfe und dem höheren Detailreichtum zu profitieren.
 
 ### 2.6 Export des Bildes als GeoTIFF
 
-Als letzten Schritt des SNAP-Tutorials werden wir das Satellitenbild nun noch als GeoTiff exportieren. Die Standart-Vorgehensweise für diesen Schritt ist in Abbildung 10 dargestellt. Wir müssen hierfür zuerst das Bild welches wir exportieren wollen im "Product Explorer"-Fenster anwählen und dann **"File -> Export -> GeoTiff / BigTiff"**
+Als letzten Schritt des ersten SNAP-Tutorials werden wir das Satellitenbild nun noch als GeoTiff exportieren. Dies ist ein weit genutztes Bildformat, welches sich problemlos in anderen Softwareumgebungen öffnen lässt wohingegen das aktuell verwendete DIMAP-Format ein SNAP-spezifisches Format ist, welches nur von SNAP geöffnet werden kann. Die Standart-Vorgehensweise für diesen Schritt ist in Abbildung 9 dargestellt. Wir müssen hierfür zuerst das Bild welches wir exportieren wollen im "Product Explorer"-Fenster anwählen und dann **"File -> Export -> GeoTiff / BigTiff"**
 
 
 ![Abbildung 9: Export Satellitenbild zu GeoTiff in SNAP](Fig_09.png)
 
 **Abbildung 9: Export Satellitenbild zu GeoTiff in SNAP**
 
-In unserem Fall, führt dies zu einer Fehlermeldung (siehe Abbildung 10). Diese Fehlermeldung erscheint, da unser aktuelles Satellitenbild aus Bändern mit verschiedenen räumlichen Auflösungen besteht. Wir ihr in eurer Hausaufgabe 1 bereits recherchiert hattet, gibt es bei Sentinel-2 bestimmte Bänder mit 10 m Pixelgröße, weitere mit 20 m Pixelgröße, und schließlich welche mit 60 m Pixelgröße. Eine Geotiff-Datei kann hiermir nicht umgehen und erwartet ein Bild in dem alle Bänder dieselbe Pixelgröße haben. 
+In unserem Fall, führt dies zu einer Fehlermeldung (siehe Abbildung 10). Diese Fehlermeldung erscheint, da unser aktuelles Satellitenbild aus Bändern mit verschiedenen räumlichen Auflösungen besteht. Wir wir bereits kurz erfahren hatten, gibt es bei Sentinel-2 bestimmte Bänder mit 10 m Pixelgröße, weitere mit 20 m Pixelgröße, und schließlich auch drei Bänder mit 60 m Pixelgröße. Eine Geotiff-Datei kann hiermir nicht umgehen und erwartet ein Bild in dem alle Bänder dieselbe Pixelgröße haben. 
 
 ![Abbildung 10: Fehlermeldung - Export nicht möglich](Fig_10.png)
 
 **Abbildung 10: Fehlermeldung - Export nicht möglich**
 
-Um den Export dennoch zu ermöglichen, werden wir nun zwei weitere Schritte implementieren:
+Um den Export dennoch zu ermöglichen, werden wir nun zwei weitere Schritte ausführen:
 
 1. Wir werden nur die Bänder mit 10 m und 20 m Pixelgröße beibehalten
 2. Wir werden alle übriggebliebenen Bänder auf 10 m "resamplen" - d.h., für die Bänder mit 20 m Pixelgröße wird die räumliche Auflösung künstlich erhöht.
@@ -173,7 +173,7 @@ Für den ersten Schritt wählen wir im Product Explorer erneut das Satellitenbil
 **Abbildung 11: Erstellung eines Band-Subsets in SNAP**
 
 
-Daraufhin erscheint sofort ein neues Produkt in der **"Product Explorer"** Ansicht. Dies geschieht ohne Zeitverzögerung, da SNAP die eigentliche Erstellung des Subsets noch nicht durchführt sondern nur die "Regel" abspeichert. Erst wenn das Satellitenbild gespeichert oder exportiert wird, wird die eigentliche Prozessierung durchgeführt.
+Daraufhin erscheint sofort ein neues Produkt in der **"Product Explorer"** Ansicht. Dies geschieht ohne Zeitverzögerung, da SNAP die eigentliche Erstellung des Subsets noch nicht durchführt sondern nur die "Regel" abspeichert. Erst wenn das Satellitenbild final gespeichert oder exportiert wird, wird die eigentliche Prozessierung durchgeführt.
 
 Für den zweiten Schritt wählen wir das soeben erstelle neue Produkt an und wählen dann **Raster -> Geometric -> Resampling**. Im erscheinenden neuen Fenster wählen wir den Reiter **Resampling Parameters** (markiert mit 1 in Abbildung 12). Hier sehen wir verschiedene Auswahlmöglichkeiten wie wir das Resampling durchführen können. Für den aktuellen Fall sind die Einstellungen bereits in Ordnung so wie sie sind und wir bestätigen mit **OK**. Daraufhin erscheint wiederum ein neues Produkt im "Product Explorer".
 
@@ -183,16 +183,6 @@ Für den zweiten Schritt wählen wir das soeben erstelle neue Produkt an und wä
 
 Wenn wir dieses neu erstelle Produkt jetzt anwählen und dann wiederum versuchen das Satellitenbild zu exportieren (siehe oben), sollte es funktionieren. Bitte speichern Sie das Bild mit dem Dateinamen "Sentinel_2_Wien_Maerz_2026.tif" in ihren Ordner. Das Bild werden wir kommende Woche in R weiterverwenden.
 
-
-Das waren die Inhalte der zweiten Sitzung „Einführung in SNAP“.
-Wenn Sie dieses Handout durchgearbeitet haben, haben Sie
-
-✓ die Benutzeroberfläche von SNAP kennengelernt,
-✓ sich damit beschäftigt, wie Sie in Ihrem Sentinel-2-Satellitenbild räumlich navigieren können,
-✓ kennengelernt, wie einzelne Spektralkanäle in Rasterdatensätzen gespeichert sind,
-✓ für unterschiedliche Wellenlängenbereiche Pixelwerte für verschiedene Landbedeckungen abgerufen und
-✓ verschiedene Farbkomposite erstellt.
-✓ Das Satellitenbild als Geotiff-Datei exportiert.
 
 ## HAUSAUFGABE
 
