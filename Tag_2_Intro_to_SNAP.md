@@ -18,11 +18,11 @@ Bitte die Daten herunterladen und im eigenen Ordner abspeichern - achtet darauf,
 
 ### Download von SNAP
 
-Die Software SNAP der Europäischen Weltraumagentur ESA kann hier für alle gängigen Betriebssysteme heruntergeladen werden:
+Die im Folgenden verwendete Software SNAP, entwickelt von der Europäischen Weltraumagentur ESA, kann hier für alle gängigen Betriebssysteme heruntergeladen werden:
 
 https://step.esa.int/main/download/snap-download/
 
-Sollten Sie die Tutorials vorranging zu Hause bearbeiten, sollten Sie die Software herunterladen und auf ihrem privaten Rechner installieren. Alternativ ist die Software auch im EDV-Raum am Institut für Geomatik installiert und kann zu den festgelegten Tutoriens-Zeiten oder wenn die Räume nicht durch andere Lehrveranstaltungen belegt sind nach Rücksprache genutzt werden. 
+Sollten Sie die Tutorials vorranging zu Hause bearbeiten, sollten Sie die Software herunterladen und auf ihrem privaten Rechner installieren. Alternativ ist die Software auch im EDV-Raum am Institut für Geomatik installiert und kann zu den festgelegten Tutoriums-Zeiten oder wenn die Räume nicht durch andere Lehrveranstaltungen belegt sind nach Rücksprache genutzt werden. 
 
 ### 2.1 Lernziele
 
