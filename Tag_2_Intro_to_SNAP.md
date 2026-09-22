@@ -6,30 +6,26 @@ Einführung in die Fernerkundung - Tag 2 - SNAP
 
 ### Allgemeine Hinweise
 
-•Es empfiehlt sich für die Übungen immer einen eigenen lokalen Ordner anzulegen und zu verwenden (z.B. **…\FE_Kurs\02_SNAP**). Ich rate ausdrücklich von der Verwendung des Desktops und der "Dokumente" oder ähnlicher Ordner ab, die insbesondere bei späteren Aufgaben mit R zu Problemen führen können. 
-
-Im Idealfall sollte man bei der Ordnererstellung darauf achten keine Sonderzeichen (wie z.B. "ä", "ü", "ö", "ß", "%" usw.) zu verwenden
+Es empfiehlt sich für die Übungen immer einen eigenen lokalen Ordner anzulegen und zu verwenden (z.B. **…\FE_Kurs\02_SNAP**). Ich rate ausdrücklich von der Verwendung des Desktops und der "Dokumente" oder ähnlicher Ordner ab, die insbesondere bei späteren Aufgaben mit R zu Problemen führen können. Im Idealfall sollte man bei der Ordnererstellung darauf achten keine Sonderzeichen (wie z.B. "ä", "ü", "ö", "ß", "%" usw.) zu verwenden
 
 **Daten:**
 
-• Komprimierter Datensatz Sentinel_2_Wien.zip (die gepackte Datei enthält ein Subset einer Sentinel-2-Szene aus dem März 2026; nach dem Entpacken sollte zum einen eine Datei im SNAP-eigenen DIMAP Format zu sehen sein, so wie ein Ordner, der die eigentlichen Daten enthält)
+Für die Übunge wird ein gezippter Datensatz namens **Sentinel_2_Wien.zip** zur Verfügung gestellt. Die gepackte Datei enthält ein Subset einer Sentinel-2-Szene aus dem März 2026; nach dem Entpacken sollte zum einen eine Datei im SNAP-eigenen DIMAP Format zu sehen sein, so wie ein Ordner, der die eigentlichen Daten enthält.
 
-• Die Daten finden sich auf BOKUlearn im entsprechenden Ordner für die Übungen von heute..
+Die Daten finden sich auf BOKUlearn im entsprechenden Ordner für die Übungen von heute..
 
-▪ Bitte die Daten herunterladen und im eigenen Ordner abspeichern - achtet darauf, dass ihr den Ordner wiederfinden könnt.
-
-▪ Anschließend können die Daten entpackt werden
+Bitte die Daten herunterladen und im eigenen Ordner abspeichern - achtet darauf, dass ihr den Ordner wiederfinden könnt. Anschließend können die Daten entpackt werden
 
 
 ### 2.1 Lernziele
 
-• Erstes Kennenlernen von SNAP
+==> Erstes Kennenlernen von SNAP
 
-• Laden von Satellitenbildern in SNAP
+==> Laden von Satellitenbildern in SNAP
 
-• Navigation innerhalb des Satellitenbildes
+==> Navigation innerhalb des Satellitenbildes
 
-• Erste Visualisierung von Satellitenbildern sowie Anzeigen von Spektralinformationen
+==> Erste Visualisierung von Satellitenbildern sowie Anzeigen von Spektralinformationen
 
 
 
@@ -39,31 +35,30 @@ Im Idealfall sollte man bei der Ordnererstellung darauf achten keine Sonderzeich
 
 **Abbildung 1: Starten von ESA SNAP im Startmenü**
 
-• Wir starten in dem wir SNAP starten. Dafür wählen wir: Start > ESA SNAP > SNAP Desktop. Falls eine Desktopverknüpfung auf Ihrem Rechner vorhanden ist, können Sie auch diese doppelklicken.
+Wir starten in dem wir SNAP starten. Dafür wählen wir: **Start > ESA SNAP > SNAP Desktop**. Falls eine Desktopverknüpfung verfügbar ist, kann SNAP auch durch einen Doppelklick auf die Verknüpfung gestartet werden.
 
-Nachdem sich SNAP geöffnet hat, können wir nun das zur Verfügung gestellte Sentinel-2 Satellitenbild öffnen, welches eine Szene von Wien zeigt.
+Nachdem sich SNAP geöffnet hat, können wir nun das zur Verfügung gestellte Sentinel-2 Satellitenbild öffnen, welches eine Sentinel-2 Szene von Wien zeigt. Hierfür gibt es zwei Optionen, zum einen kann das Bild über **FILE > OPEN PRODUCT** geöffnet werden. Falls  mit der ersten Option das Bild im richtigen Ordner nicht angezeigt wird, kann man unter **Files of type > All Files** wählen und dann sollte das Bild zu sehen sein. Eine weitere Option ist es die Datei **subset_0_of_S2A_MSIL1C_20260314T095051_N0512_R079_T33UWP_20260314T132917** direkt via "drag & drop" in den Product Explorer von SNAP zu ziehen.
 
-• Hierfür gibt es zwei Optionen, zum einen kann das Bild über **FILE > OPEN PRODUCT** geöffnet werden. Falls  mit der ersten Option das Bild im richtigen Ordner nicht angezeigt wird, kann man unter Files of type > All Files wählen und dann sollte das Bild zu sehen sein. Eine weitere Option ist es die Datei **subset_0_of_S2A_MSIL1C_20260314T095051_N0512_R079_T33UWP_20260314T132917** direkt via "drag & drop" in den Product Explorer von SNAP zu ziehen.
-
-• Als nächsten Schritt öffnen wir einen einzelnen Spektralkanal des Satellitenbildes. Dafür öffnen wir zuerst im Product Explorer den Reiter Bands und machen dann entweder einen Rechtsklick auf das Band 2 und wählen "Open Image Window" oder alternativ führen wir einen Doppelklick auf das Band 2 aus.
+Als nächsten Schritt öffnen wir einen einzelnen Spektralkanal des Satellitenbildes. Dafür öffnen wir zuerst im Product Explorer den Reiter **Bands** und machen dann entweder einen **Rechtsklick auf das Band 2** und wählen **"Open Image Window"** oder alternativ führen wir einen Doppelklick auf das Band 2 aus.
 
 ![Abbildung 2: Laden von Band 2 des Sentinel-2 Satellitenbildes](Fig_02.png)
 
 **Abbildung 2: Laden von Band 2 des Sentinel-2 Satellitenbildes**
 
-Sie sollten nun rechts im großen Visualisierungsbereich eine Visualisierung des Spektralkanals sehen. Im nächsten Schritt lernen wir, wie wir innerhalb des Satellitenbildes navigieren können.
+Rechts im großen Visualisierungsbereich sollte nun eine Visualisierung des Spektralkanals zu sehen sein. Im nächsten Schritt lernen wir, wie wir innerhalb des Satellitenbildes navigieren können.
 
 ### 2.3 Navigieren und zoomen im Satellitenbild
 
-Für die Navigation und räumliche Orientierung in SNAP gibt es einige hilfreiche Tools. In manchen Fällen kann es interessant sein zu überprüfen an welcher Stelle der Welt sich das aktuell geladene Satellitenbild befindet. In den Standarteinstellungen findet sich hierfür in der Benutzeroberfläche links unten ein Reiter namens "WorldView" (markiert mit 2 in Abbildung 3). Hier werden die Grenzen des Satellitenbilde auf der Weltkugel dargestellt.
+Für die Navigation und räumliche Orientierung in SNAP gibt es einige hilfreiche Tools. In manchen Fällen kann es interessant sein zu überprüfen an welcher Stelle der Welt sich das aktuell geladene Satellitenbild befindet. In den Standarteinstellungen findet sich hierfür in der Benutzeroberfläche links unten ein Reiter namens **"WorldView"** (markiert mit 2 in Abbildung 3). Hier werden die Grenzen des Satellitenbilde auf der Weltkugel dargestellt.
 
-Um in das Bild hineinzuzoomen gibt es in der Hauptmenü-Leiste einen Zoom button (markiert mit 1 in Abbildung 3). Nachdem dieser ausgewählt wurde, kann man mit der Maus ein Rechteck in der aktuellen Visualisierung zeichnen und die Visualisierung zoomt dann auf diesen Ausschnitt.
+Um in das Satellitenbild hineinzuzoomen gibt es in der Hauptmenü-Leiste einen **Zoom button** (markiert mit 1 in Abbildung 3). Nachdem dieser ausgewählt wurde, kann man mit der Maus ein Rechteck in der aktuellen Visualisierung zeichnen und die Visualisierung zoomt dann auf diesen Ausschnitt.
 
-Mit dem Panning tool (markiert mit 1 in Abbildung 3) kann man den aktuell sichtbaren Bildausschnitt verändern indem man mit der Maus klickt, hält und dann die Maus in eine entsprechende Richtung zieht.
+Mit dem **Panning tool** (markiert mit 1 in Abbildung 3) kann man den aktuell sichtbaren Bildausschnitt verändern indem man mit der Maus klickt, hält und dann die Maus in eine entsprechende Richtung zieht.
 
-Für die Navigation innerhalb des visualisierten Satellitenbildes gibt es im Reiter "Navigation" (markiert mit 1 in Abbildung 3a) weitere Tools:
+Für die Navigation innerhalb des visualisierten Satellitenbildes gibt es im Reiter **"Navigation"** (markiert mit 1 in Abbildung 3a) weitere Tools:
 
 - Zoom-Buttons: Durch (mehrfaches) klicken des plus oder minus buttons (markiert mit 2 in Abbildung 3a) kann man in das Satellitenbild hinein- oder herauszoomen. Alternativ kann man auch mit dem Mausrad zoomen.
+- Synchronize view button (markiert mit 3 in Abbildung 3a): Wenn ich Visualisierungen von mehreren Bändern oder auch Farbkompositen geöffnet habe (siehe unten) erlaubt der "Synchronize view" button, dass für alle derzeit geöffneten Visualisierungen immer derselbe Bildausschnitt angezeigt wird. Wir können dies testen in dem wir  ein weiteres Band laden (siehe Beschreibung oben) und dann den Synchronize view Button klicken. Zoomen wir nun in einer Visualisierung an eine bestimmte Stelle im Satellitenbild, so sollte der genau gleiche Bildausschnitt sichtbar sein, wenn wir in eine andere Visualisierung springen (diese werden als Reiter im großen Visualisierungsfenster angezeigt).
  
 
 ![Abbildung 3: Navigation in SNAP 1](Fig_03.png)
