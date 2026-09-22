@@ -1,8 +1,8 @@
 ﻿
-Einführung in die Fernerkundung - Tag 2 - SNAP
+Einführung in die Fernerkundung - Tag 1 - SNAP
 
 
-## 2 Einstieg in SNAP
+## 1 Einstieg in SNAP
 
 ### Allgemeine Hinweise
 
