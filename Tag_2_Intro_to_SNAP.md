@@ -24,8 +24,11 @@ Im Idealfall sollte man bei der Ordnererstellung darauf achten keine Sonderzeich
 ### 2.1 Lernziele
 
 • Erstes Kennenlernen von SNAP
+
 • Laden von Satellitenbildern in SNAP
+
 • Navigation innerhalb des Satellitenbildes
+
 • Erste Visualisierung von Satellitenbildern sowie Anzeigen von Spektralinformationen
 
 
@@ -54,11 +57,14 @@ Sie sollten nun rechts im großen Visualisierungsbereich eine Visualisierung des
 
 Für die Navigation und räumliche Orientierung in SNAP gibt es einige hilfreiche Tools. In manchen Fällen kann es interessant sein zu überprüfen an welcher Stelle der Welt sich das aktuell geladene Satellitenbild befindet. In den Standarteinstellungen findet sich hierfür in der Benutzeroberfläche links unten ein Reiter namens "WorldView" (markiert mit 2 in Abbildung 3). Hier werden die Grenzen des Satellitenbilde auf der Weltkugel dargestellt.
 
-Für die Navigation innerhalb des visualisierten Satellitenbildes gibt es im Reiter "Navigation" verschiedene gängige Tools:
+Um in das Bild hineinzuzoomen gibt es in der Hauptmenü-Leiste einen Zoom button (markiert mit 1 in Abbildung 3). Nachdem dieser ausgewählt wurde, kann man mit der Maus ein Rechteck in der aktuellen Visualisierung zeichnen und die Visualisierung zoomt dann auf diesen Ausschnitt.
 
-- Zoom-Buttons: Durch (mehrfaches) klicken des plus oder minus buttons (markiert mit 1 in Abbildung 3) kann man in das Satellitenbild hinein- oder herauszoomen. Alternativ kann man auch mit dem Mausrad zoomen.
+Mit dem Panning tool (markiert mit 1 in Abbildung 3) kann man den aktuell sichtbaren Bildausschnitt verändern indem man mit der Maus klickt, hält und dann die Maus in eine entsprechende Richtung zieht.
+
+Für die Navigation innerhalb des visualisierten Satellitenbildes gibt es im Reiter "Navigation" (markiert mit 1 in Abbildung 3a) weitere Tools:
+
+- Zoom-Buttons: Durch (mehrfaches) klicken des plus oder minus buttons (markiert mit 2 in Abbildung 3a) kann man in das Satellitenbild hinein- oder herauszoomen. Alternativ kann man auch mit dem Mausrad zoomen.
  
-- Panning tool: Mit dem Panning tool (markiert mit 1 in Abbildung 3) kann man den aktuell sichtbaren Bildausschnitt verändern
 
 ![Abbildung 3: Navigation in SNAP ](Fig_03.png)
 
